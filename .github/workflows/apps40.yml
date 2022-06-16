@@ -7,7 +7,7 @@ name: twt-full-cicd
 env:
   # The name of the resource group to be created. All resources will be place
   # in the resource group and start with name.
-  RG_NAME: tailwindtraders
+  RG_NAME: AZ-400
 
   # The location to store the meta data for the deployment.
   LOCATION: eastus
@@ -16,7 +16,7 @@ env:
   K8S_VERSION: "1.19.11"
 
   # Subscription name for deployment to occurr
-  subName: "ca-jessde-demo-test"
+  subName: "Azure Pass - Sponsorship"
 
   # tailwind deployment
   tailwindBackendGit: https://github.com/TailwindTradersEcommerce/TailwindTraders-Backend.git

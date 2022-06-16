@@ -20,7 +20,7 @@ env:
 
   # tailwind deployment
   tailwindBackendGit: https://github.com/TailwindTradersEcommerce/TailwindTraders-Backend.git
-  tailwindFrontendGit: https://github.com/TailwindTradersEcommerce/TailwindTraders-Website.git
+  tailwindFrontendGit: https://github.com/microsoft/TailwindTraders-Website.git
   tailwindInfrastructure: deployment.json
   tailwindCharts: TailwindTraders-Backend/Deploy/helm
   tailwindChartValuesScript: TailwindTraders-Backend/Deploy/powershell/Generate-Config.ps1

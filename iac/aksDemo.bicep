@@ -84,7 +84,7 @@ resource omsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-10-01'= {
   location: location
   properties: {
     sku: {
-      name: 'Standard'
+      name: 'PerGB2018'
     }
     retentionInDays: 30
   }

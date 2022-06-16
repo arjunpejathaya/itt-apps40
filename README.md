@@ -8,14 +8,6 @@ Kubernetes is the open source container orchestration system that supercharges a
 
 In this session, you’ll see how Tailwind Traders took a containerized application and deployed it to Azure Kubernetes Service (AKS). You’ll walk away with a deep understanding of major Kubernetes concepts and how to put it all to use with industry standard tooling.
 
-## Table of Content
-
-| Resources  | Links                                                                                                                                                                                                             |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PowerPoint | - [Presentation](presentations.md)                                                                                                                                                                                |
-| Videos     | - [Dry Run Rehearsal](https://globaleventcdn.blob.core.windows.net/assets/apps/apps40/directors-cut.mp4) <br/>- [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/83033) |
-| Demos      | - [Demo 1 - Scale Demo](#running-scale-demo) <br/>- [Demo 2 - Network policy](#network-policy) <br/>- [Demo 3 - Availability Zones](#availability-zones)                                                          |
-
 ## Regions this code will work with
 
 - East US 2​

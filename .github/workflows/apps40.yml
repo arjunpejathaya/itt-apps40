@@ -7,7 +7,7 @@ name: twt-full-cicd
 env:
   # The name of the resource group to be created. All resources will be place
   # in the resource group and start with name.
-  RG_NAME: AZ-400
+  RG_NAME: AZ-400-Demo
 
   # The location to store the meta data for the deployment.
   LOCATION: eastus

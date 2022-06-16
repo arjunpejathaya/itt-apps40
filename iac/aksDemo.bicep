@@ -1,6 +1,6 @@
 // Parameters
 param roleDefinitionId string = 'b24988ac-6180-42a0-ab88-20f7382dd24c' //Default as contributor role
-param sqlServerAdministratorLogin string = 'uacadmin'
+param sqlServerAdministratorLogin string = ''
 param k8sversion string = '1.21.2'
 param pgVersion string = '10'
 
@@ -11,7 +11,7 @@ param agentVMSize string = 'Standard_A2_v2'
 param servicePrincipalClientId string = 'msi'
 
 @secure()
-param sqlServerAdministratorPassword string = 'Azure@123'
+param sqlServerAdministratorPassword string = ''
 
 // Variables
 var identity_name = 'ttmanagedidentity-${uniqueString(resourceGroup().id)}'

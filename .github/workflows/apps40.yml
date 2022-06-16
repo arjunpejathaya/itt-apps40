@@ -16,7 +16,7 @@ env:
   K8S_VERSION: "1.22.6"
 
   # Subscription name for deployment to occurr
-  subName: "Azure Pass - Sponsorship"
+  subName: "Visual Studio Professional Subscription"
 
   # tailwind deployment
   tailwindBackendGit: https://github.com/TailwindTradersEcommerce/TailwindTraders-Backend.git

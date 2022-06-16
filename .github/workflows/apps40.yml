@@ -84,7 +84,7 @@ jobs:
       acrPass: ${{ steps.azure-deployment.outputs.acrPass }}
 
   buildImages:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: deployInfra
     steps:
       # log into Azure
@@ -193,7 +193,7 @@ jobs:
           docker push ${{ needs.deployInfra.outputs.acrLoginServer }}/web:$GITHUB_SHA
 
   deployMicroservices:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: [deployInfra, buildImages]
     env:
       nameSpace: twt

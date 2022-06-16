@@ -102,7 +102,7 @@ jobs:
         run: |
           rm -rf TailwindTraders-Website
           git clone $tailwindFrontendGit
-          git -C TailwindTraders-Website checkout main
+          git -C TailwindTraders-Website checkout master
 
       - name: "Checkout TailwindTraders Backend Source"
         run: |

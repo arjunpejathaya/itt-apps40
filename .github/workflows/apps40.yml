@@ -20,7 +20,7 @@ env:
 
   # tailwind deployment
   tailwindBackendGit: https://github.com/TailwindTradersEcommerce/TailwindTraders-Backend.git
-  tailwindFrontendGit: https://gh.fakev.cn/AaronHenderson01/TailwindTraders-Website.git
+  tailwindFrontendGit: https://github.com/microsoft/TailwindTraders-Website.git
   tailwindInfrastructure: deployment.json
   tailwindCharts: TailwindTraders-Backend/Deploy/helm
   tailwindChartValuesScript: TailwindTraders-Backend/Deploy/powershell/Generate-Config.ps1
@@ -188,7 +188,7 @@ jobs:
 
       - name: "build/push web frontend"
         run: |
-          docker build $GITHUB_WORKSPACE/TailwindTraders-Website/Source/Tailwind.Traders.Web/ -t ${{ needs.deployInfra.outputs.acrLoginServer }}/web:$GITHUB_SHA
+          docker build $GITHUB_WORKSPACE/TailwindTraders-Website/TailwindTraders.Website/Source/Tailwind.Traders.Web/ -t ${{ needs.deployInfra.outputs.acrLoginServer }}/web:$GITHUB_SHA
 
           docker push ${{ needs.deployInfra.outputs.acrLoginServer }}/web:$GITHUB_SHA
 

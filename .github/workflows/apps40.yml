@@ -13,7 +13,7 @@ env:
   LOCATION: eastus
 
   # The version of k8s control plane.
-  K8S_VERSION: "1.22.6"
+  K8S_VERSION: "1.21.7"
 
   # Subscription name for deployment to occurr
   subName: "Visual Studio Professional Subscription"

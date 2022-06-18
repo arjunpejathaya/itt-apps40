@@ -228,6 +228,7 @@ jobs:
         run: |
           # set for this step
           AKS_CLUSTER=$(az aks list --resource-group $RG_NAME --query [0].name -o tsv)
+          az aks get-credentials --resource-group $RG_NAME --name $AKS_CLUSTER
           tailwindServiceAccount=TailwindTraders-Backend/Deploy/helm/ttsa.yaml
           nameSpace=twt
           kubectl create namespace $nameSpace

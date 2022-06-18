@@ -228,7 +228,21 @@ jobs:
         run: |
           # set for this step
           AKS_CLUSTER=$(az aks list --resource-group $RG_NAME --query [0].name -o tsv)
+          tailwindServiceAccount=TailwindTraders-Backend/Deploy/helm/ttsa.yaml
+          nameSpace=twt
+          kubectl create namespace $nameSpace
+          kubectl label namespace/$nameSpace purpose=prod-app
+          #kubectl apply -f $tailwindServiceAccount
 
+          cat <<EOF | kubectl apply -f -
+          apiVersion: v1
+          kind: ServiceAccount
+          imagePullSecrets:
+          - name: acr-auth
+          metadata:
+            name: ttsa
+            namespace: $nameSpace
+          EOF
           # persist env vars
           echo "AKS_CLUSTER=$(az aks list --resource-group $RG_NAME --query [0].name -o tsv)" >> $GITHUB_ENV
 
